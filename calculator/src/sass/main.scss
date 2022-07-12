@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator {
+    &__row {
+        display: flex;
+    }
+    &__operation {
+        width: 100%;
+        height: 20px;
+        text-align: right;
+    }
+    &__result {
+        width: 100%;
+        height: 40px;
+        text-align: right;
+        padding: 5px;
+    }
+    &__button {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
