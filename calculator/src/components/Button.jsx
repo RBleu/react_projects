@@ -2,7 +2,10 @@ function Button({ text, result, setResult, operation, setOperation }) {
   function updateResult() {
     const operators = ['+', '-', '/', '*'];
 
-    if (text === '=') {
+    if (text === 'C') {
+      setOperation('');
+      setResult('0');
+    } else if (text === '=') {
       const new_result = '' + eval(operation.concat(result));
       setOperation(new_result);
       setResult(new_result);
